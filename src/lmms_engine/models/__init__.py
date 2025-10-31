@@ -1,6 +1,8 @@
 from .aero import AeroConfig, AeroForConditionalGeneration, AeroProcessor
 from .bagel import Bagel, BagelConfig
 from .config import ModelConfig
+from .dream_dllm import DreamDLLMConfig, DreamDLLMForMaskedLM
+from .llada_dllm import LLaDADLLMConfig, LLaDADLLMForMaskedLM
 from .llava_onevision import apply_liger_kernel_to_llava_onevision
 from .monkey_patch import MONKEY_PATCHER
 from .qwen2 import apply_liger_kernel_to_qwen2
@@ -13,8 +15,6 @@ from .qwen2_5_vl import apply_liger_kernel_to_qwen2_5_vl
 from .qwen2_audio import apply_liger_kernel_to_qwen2_audio
 from .qwen3_dllm import Qwen3DLLMConfig, Qwen3DLLMForMaskedLM
 from .qwen3_moe import apply_liger_kernel_to_qwen3_moe
-from .dream_dllm import DreamDLLMConfig, DreamDLLMForMaskedLM
-from .llada_dllm import LLaDADLLMConfig, LLaDADLLMForMaskedLM
 from .qwen3_vl import apply_liger_kernel_to_qwen3_vl
 from .rae_siglip import RaeSiglipConfig, RaeSiglipModel
 from .sit import SiT, SiTConfig, SiTModel
