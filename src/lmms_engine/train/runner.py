@@ -19,6 +19,7 @@ from lmms_engine.mapping_func import (
 )
 from lmms_engine.models import MONKEY_PATCHER
 from lmms_engine.models.utils import setup_flops_counter
+from lmms_engine.parallel.parallelize import apply_parallelize
 from lmms_engine.parallel.sequence_parallel.ulysses import (
     set_ulysses_sequence_parallel_group,
 )
