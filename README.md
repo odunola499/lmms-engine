@@ -33,8 +33,21 @@ LMMs-Engine
 git clone https://github.com/LMMs-Lab/lmms-engine.git
 cd lmms-engine
 
-# Install dependencies
+# Install editable packages
+uv pip install -e ".[all]"
+# or install as a packages
+uv pip install -e .
+# Install a stable release
+uv pip install lmms-engine
+
+# Install dependencies using uv sync
+# For Linux systems (recommended - auto-detects platform):
+bash uv_sync_linux.sh
+
+# For other systems or if encountering errors:
 uv sync
+# If uv sync fails, try: 
+uv pip install -r requirements.txt
 
 # Optional: Performance optimizations
 uv pip install flash-attn --no-build-isolation
